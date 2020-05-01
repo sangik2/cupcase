@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  </head>
+  <body>
+    <div class="flex-box">
+        <div class="grid">
+            <div class="grid-item inside--1" > <a href="index.html"><img src="무제-1_대지 1 사본 2.png"></a></div>
+            <div class="grid-item inside--2"><img src="무제-1_대지 1 사본 3.png"></div>
+            <div class="grid-item inside--3"><img src="무제-1_대지 1 사본 4.png"></div>
+            <div class="grid-item inside--3"><img src="무제-1_대지 1 사본 5.png"></div>
+            <div class="grid-item inside--3"><img src="무제-1_대지 1 사본 6.png"></div>
+            <div class="grid-item inside--3"><img src="무제-1_대지 1 사본 7.png"></div>
+            <div class="grid-item inside--3"><img src="무제-1_대지 1 사본 8.png"></div>
+            <div class="grid-item inside--3"><img src="무제-1_대지 1.png"></div>
+            <div class="grid-item inside--3"><img src="무제-1_대지 1 사본.png"></div>
+        </div>
+    </div>
+
+      <script>
+      var elem = document.querySelector('.grid');
+        var msnry = new Masonry( elem, {
+          // options
+          itemSelector: '.grid-item',
+          isFitWidth : true
+          //columnWidth: 200
+        });
+        </script>
+  </body>
+</html>
